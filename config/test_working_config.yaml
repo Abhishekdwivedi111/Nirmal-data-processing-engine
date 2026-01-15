@@ -1,0 +1,92 @@
+# Working Test Configuration for Nirmal Data Processing Engine
+# This configuration is tested and working
+
+pipeline:
+  cleaning:
+    enabled: true
+  validation:
+    enabled: true
+  preprocessing:
+    enabled: true
+  validate_before_cleaning: false
+  strict_validation: false
+
+# Data Cleaning Configuration
+cleaning:
+  # Remove duplicate rows
+  remove_duplicates:
+    enabled: true
+    subset: null  # null = check all columns (auto-exclude ID columns)
+    keep: "first"
+  
+  # Handle missing values
+  handle_missing:
+    enabled: true
+    strategy: "fill"  # Options: "drop", "fill", "forward_fill", "backward_fill"
+    fill_value: null  # null = auto-detect (median for numeric, mode for text)
+    columns: null  # null = process all columns
+  
+  # Handle invalid zeros (disabled for this test)
+  handle_invalid_zeros:
+    enabled: false
+  
+  # Clean numeric columns (convert invalid values like 'abc' to NaN, and negative values for positive-only columns)
+  clean_numeric:
+    enabled: true
+    columns: null  # null = auto-detect numeric columns
+    # Note: Automatically handles negative values in columns like 'salary', 'age', 'price', etc.
+  
+  # Outlier handling (disabled for this test)
+  outliers:
+    enabled: false
+  
+  # Remove outliers (disabled for this test)
+  remove_outliers:
+    enabled: false
+  
+  # Standardize text columns (disabled for this test)
+  standardize_text:
+    enabled: false
+
+# Data Validation Configuration
+validation:
+  data_types:
+    enabled: false
+    schema: {}
+  
+  value_ranges:
+    enabled: false
+    ranges: {}
+  
+  not_null:
+    enabled: false
+    columns: []
+  
+  unique:
+    enabled: false
+    columns: []
+
+# Data Preprocessing Configuration
+preprocessing:
+  feature_selection:
+    enabled: false
+    action: "keep"
+    columns: []
+  
+  normalize:
+    enabled: false
+    columns: []
+    method: "standard"
+  
+  encode_categorical:
+    enabled: false
+    columns: []
+    method: "label"
+  
+  datetime_features:
+    enabled: false
+    columns: []
+  
+  aggregate_features:
+    enabled: false
+    aggregations: {}

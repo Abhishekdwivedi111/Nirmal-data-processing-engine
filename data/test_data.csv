@@ -1,0 +1,11 @@
+name,age,city,salary
+Alice,25,New York,50000
+Bob,,Los Angeles,60000
+Charlie,abc,Chicago,-2000
+David,40,,70000
+Alice,25,New York,50000
+ Eve ,30, Boston ,55000
+,,,
+Frank,28,San Francisco,
+John,35,Seattle,65000
+Mary,,Portland,58000
