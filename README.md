@@ -34,7 +34,7 @@
 ---
 
 ---
-## 🚀 Live Demo
+## 👁️👁️ Live Demo
 Check out the live version of this app here:
 
 [![Live App](https://img.shields.io/badge/Streamlit-Live-brightgreen)](https://nirmal-data-processing-engine-h9vgh8ckuvbdxjp4hpdsoj.streamlit.app/)
