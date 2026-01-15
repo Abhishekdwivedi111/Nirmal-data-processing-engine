@@ -5,7 +5,15 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 
 > **A production-ready, modular Python framework for automated data cleaning, validation, and preprocessing with YAML-driven configuration and interactive web interface.**
+---
+## 👁️👁️ Live Demo
+Check out the live version of this app here:
 
+[![Live App](https://img.shields.io/badge/Streamlit-Live-brightgreen)](https://nirmal-data-processing-engine-h9vgh8ckuvbdxjp4hpdsoj.streamlit.app/)
+
+Try the app online to process your data in real-time and download clean results!
+
+---
 ---
 
 ## 🎯 Overview
@@ -30,16 +38,6 @@
 - 🎯 **Outlier Handling**: Configurable IQR/Z-score methods with capping or removal
 - 📝 **Structured Logging**: Comprehensive logging for tracking execution
 - 💾 **Flexible Output**: Download processed data in CSV, Excel, JSON, or YAML formats
-
----
-
----
-## 👁️👁️ Live Demo
-Check out the live version of this app here:
-
-[![Live App](https://img.shields.io/badge/Streamlit-Live-brightgreen)](https://nirmal-data-processing-engine-h9vgh8ckuvbdxjp4hpdsoj.streamlit.app/)
-
-Try the app online to process your data in real-time and download clean results!
 
 ---
 
